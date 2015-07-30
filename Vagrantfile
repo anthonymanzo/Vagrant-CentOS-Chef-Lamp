@@ -46,10 +46,10 @@ end
     vsphere.vm_base_path =  '/vagrant-machines/'                                    
 
     # vSphere login
-    vsphere.user = 'AD\manzo'                                    
+    vsphere.user = 'AD\yourAdAccountHere'                                    
 
     # vSphere password
-    vsphere.password = 'Just4ev7!'                            
+    vsphere.password = 'YourAdPwdHere'                            
 
     # If you don't have SSL configured correctly, set this to 'true'
     vsphere.insecure = true                                    
