@@ -13,6 +13,9 @@ config.vm.provider :virtualbox do |vb, override|
 	override.vm.box_url = 'https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.5-x86_64-v20140504.box'
 end
   
+  #config.ssh.private_key_path = './vagrant_private.key';
+  config.ssh.insert_key = true
+  
 #If using on vsphere host
  config.vm.provider :vsphere do |vsphere, override|
  	# Every Vagrant virtual environment requires a box to build off of.
@@ -36,7 +39,7 @@ end
     vsphere.template_name = 'Templates/VagrantCent6x'    
 
     # The name of the new machine
-    vsphere.name = 'LampZZ'
+    vsphere.name = 'LampXXXX'
     
     
     #  this needs to exist on the compute_resource_name above 
@@ -46,10 +49,10 @@ end
     vsphere.vm_base_path =  '/vagrant-machines/'                                    
 
     # vSphere login
-    vsphere.user = 'AD\yourAdAccountHere'                                    
+    vsphere.user = 'AD\manzo'                                    
 
     # vSphere password
-    vsphere.password = 'YourAdPwdHere'                            
+    vsphere.password = '5431ADit'                            
 
     # If you don't have SSL configured correctly, set this to 'true'
     vsphere.insecure = true                                    
