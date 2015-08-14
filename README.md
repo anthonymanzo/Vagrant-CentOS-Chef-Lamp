@@ -26,7 +26,7 @@ Chef recipes are modified with attributes that are set in the [VagrantFile] (Vag
 - Vagrant
 - NREL Vagrant Base Boxes | https://github.com/NREL/vagrant-boxes
 - Chef | https://www.getchef.com
-- 
+
 #Usage
 Install and bring up a sytem (from the cloned ~/Vagrant-CentOS-Chef-Lamp directory)
 ```
