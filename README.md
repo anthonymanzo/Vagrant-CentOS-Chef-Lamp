@@ -26,3 +26,17 @@ Chef recipes are modified with attributes that are set in the [VagrantFile] (Vag
 - Vagrant
 - NREL Vagrant Base Boxes | https://github.com/NREL/vagrant-boxes
 - Chef | https://www.getchef.com
+- 
+#Usage
+Install and bring up a sytem (from the cloned ~/Vagrant-CentOS-Chef-Lamp directory)
+```
+vagrant up --provider=vsphere --debug
+```
+After the system has started to load, it will ask for a password, this will go away once I generate a ssh key, but I'm not there yet.  So for now type in 'vagrant'.
+
+After the system has loaded and been provisioned by Chef you can login to the system
+```
+vagrant ssh
+```
+More info on Vagrant Commands | http://docs.vagrantup.com/v2/cli/index.html
+
